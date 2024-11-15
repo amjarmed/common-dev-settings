@@ -1,16 +1,22 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      "type": "node",
-      "request": "launch",
-      "name": "Launch Next.js",
-      "program": "${workspaceFolder}/node_modules/.bin/next",
-      "args": ["dev"],
-      "cwd": "${workspaceFolder}"
-    }
-  ],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true
+  },
+  "typescript.tsdk": "./node_modules/typescript/lib",
 
   "scss.lint.unknownAtRules": "ignore",
-  "css.validate": false
+  "css.validate": false,
+  "git.ignoreLimitWarning": true,
+  "git.enableSmartCommit": true,
+  "eslint.enable": true,
+  "eslint.options": {
+    "configFile": ".eslintrc.json"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[json]": {
+    "editor.tabSize": 4
+  }
 }
